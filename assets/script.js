@@ -16,3 +16,12 @@ const slides = [
 		"tagLine":"Autocollants <span>avec découpe laser sur mesure</span>"
 	}
 ]
+
+// acceder aux fleches, ajouter un gestionnaire d'événement et vérifier à la console
+const fleches = document.querySelectorAll('.arrow');
+ for(chevron of fleches){
+	chevron.addEventListener("click", info);
+ }
+function info(){
+	console.log(this);
+}
